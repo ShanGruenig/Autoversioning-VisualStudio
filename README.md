@@ -1,0 +1,1 @@
+# Autoversioning-VisualStudio
