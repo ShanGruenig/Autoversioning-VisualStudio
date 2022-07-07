@@ -7,8 +7,9 @@ All GitHooks scripts run the PowerShell scripts that contain the functions.
 - If versions should be visible in README.md -> add chapter ***Buildversion*** (In Markdown -> # Buildversion)
 
 And now for each commit:
-- the version number written in the commit
-- 
+- The version number written in the commit
+- A releasenotes.txt is written (only if ***Buildversion*** in README.md | otherwise only current commit is written). This file is written as a markdown table.
+- If ***Buildversion*** in README.md then the commit is written as a markdown table under ***Buildversion***
 
 ---
 
