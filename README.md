@@ -1,4 +1,4 @@
-## Autoversioning
+# Get started
 - Paste all files in the ***versioning*** folder into GitHook's folder (\.git\hooks).
 - If versions should be visible in README.md -> add chapter ***Buildversion*** (In Markdown -> # Buildversion)
 
@@ -6,7 +6,7 @@ And now your project is ready.
 
 ---
 
-# Automatisierungs Scripts
+# Autoversioning Scripts
 ## VersionEdit.ps1
 This script is run by the GitHooks script (pre-commit) and changes the version number of the application. It increments the last version number (0.0.0.0 -> 0.0.0.1).
 
