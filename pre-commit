@@ -1,4 +1,4 @@
 #!/bin/sh
 echo
-exec powershell -ExecutionPolicy Bypass -File '.\.git\hooks\VersionEdit.ps1'
+exec powershell -NoProfile -ExecutionPolicy Bypass -File '.\.git\hooks\VersionEdit.ps1'
 exit
