@@ -177,7 +177,7 @@ This GitHook script starts the VersionEdit.ps1 script before committing.
 ```bash
 #!/bin/sh
 echo
-exec powershell -ExecutionPolicy Bypass -File '.\.git\hooks\VersionEdit.ps1'
+exec powershell -NoProfile -ExecutionPolicy Bypass -File '.\.git\hooks\VersionEdit.ps1'
 exit
 ```
 
@@ -187,7 +187,7 @@ This GitHook script starts the CommitEdit.ps1 script before the commit is execut
 ```bash
 #!/bin/sh
 echo
-exec powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\.git\hooks\CommitEdit.ps1" $1
+exec powershell -NoProfile -ExecutionPolicy Bypass -File ".\.git\hooks\CommitEdit.ps1" $1
 exit
 ```
 
@@ -197,6 +197,6 @@ This GitHook script starts the PostCommitEdit.ps1 script after the commit has be
 ```bash
 #!/bin/sh
 echo
-exec powershell.exe -NoProfile -ExecutionPolicy Bypass -File ".\.git\hooks\PostCommitEdit.ps1"
+exec powershell -NoProfile -ExecutionPolicy Bypass -File ".\.git\hooks\PostCommitEdit.ps1"
 exit
 ```
